@@ -1,0 +1,95 @@
+body {
+  font-family: "Nunito", sans-serif;
+  max-width: 70%;
+  display: block;
+  margin: auto;
+}
+img {
+  max-width: 100;
+  vertical-align: middle;
+}
+
+.col-4 {
+  margin-top: 70px;
+}
+
+span {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+th,
+td {
+  color: #fff;
+  border: none;
+}
+
+button {
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  color: #ffff;
+  background: transparent;
+  margin: 0 17px 20px;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  color: #c9c4fb;
+  background: #fff;
+}
+
+.d-flex {
+  height: 3rem;
+}
+
+.searchButton {
+  height: 3rem;
+}
+
+.clearsky {
+  margin: 10px 10px 10px 40px;
+}
+
+.searchButton {
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  color: #ffff;
+  background: transparent;
+  margin: 0 17px 20px;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 8px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.searchButton:hover {
+  color: #c9c4fb;
+  background: #fff;
+}
+
+.card {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #fff;
+  border: none;
+}
+
+.col-4 {
+  margin-top: 70px;
+}
+
+.currentHour {
+  margin-top: 20px;
+}
+
+.location {
+  font-size: 40px;
+  margin: 0;
+}
