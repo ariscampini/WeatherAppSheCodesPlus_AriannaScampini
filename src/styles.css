@@ -11,14 +11,15 @@ img {
 
 .col-4 {
   margin-top: 70px;
+  font-size: 15px;
 }
 
-span {
+.degrees {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 40px;
 }
 
 th,
@@ -43,6 +44,23 @@ button {
 button:hover {
   color: #c9c4fb;
   background: #fff;
+}
+
+.currentPosition {
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  color: #c9c4fb;
+  background: #ffff;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 11px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.currentPosition:hover {
+  color: #fff;
+  background: transparent;
 }
 
 .d-flex {
@@ -83,6 +101,7 @@ button:hover {
 
 .col-4 {
   margin-top: 70px;
+  font-size: 12px;
 }
 
 .currentHour {
