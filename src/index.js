@@ -96,8 +96,8 @@ function cityChange(event) {
   search(city);
 }
 
-let location = document.querySelector("#city-search-bar");
-location.addEventListener("submit", cityChange);
+let locationNow = document.querySelector("#city-search-bar");
+locationNow.addEventListener("submit", cityChange);
 
 // Current Position
 
@@ -119,4 +119,5 @@ currentLocationButton.addEventListener("click", getCurrentPosition);
 //
 
 search("Madrid");
+
 
