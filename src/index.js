@@ -78,6 +78,32 @@ function showTemperature(response) {
   document.querySelector("#sky-status").innerHTML =
     response.data.weather[0].main;
 
+ //Fahrenheit Function
+
+function changeDegreesFahrenheit(event) {
+  event.preventDefault();
+ 
+  let changeDegreeF = document.querySelector("#degrees");
+  let temperature = temperatureNow.innerHTML;
+  let changeF= (temperatureNow * 9) / 5 + 32;
+  changeDegreeF.innerHTML = `${changeF}°F`
+}
+
+let fahrenheitDegrees = document.querySelector("#fahrenheit");
+fahrenheitDegrees.addEventListener("click", changeDegreesFahrenheit);
+
+// Celcius Function
+
+function changeDegreesCelsius(event) {
+  event.preventDefault();
+
+  let changeDegreeC = document.querySelector("#degrees");
+  changeDegreeC.innerHTML = `${temperatureNow}°C`;
+}
+
+let celciusDegrees = document.querySelector("#celsius");
+celciusDegrees.addEventListener("click", changeDegreesCelsius);
+
   //sky-status
 }
 
@@ -87,6 +113,7 @@ function search(city) {
   let url = "https://api.openweathermap.org/data/2.5/weather?";
   let apiUrl = `${url}q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}`).then(showTemperature);
+  console.log= apiURL
 }
 
 function cityChange(event) {
@@ -113,11 +140,13 @@ function showCurrentPosition(position) {
   axios.get(`${apiUrl}`).then(showTemperature);
 }
 
+
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentPosition);
 
 //
 
 search("Madrid");
+
 
 
