@@ -105,6 +105,8 @@ let celciusDegrees = document.querySelector("#celsius");
 celciusDegrees.addEventListener("click", changeDegreesCelsius);
 
   //sky-status
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)  ;
 }
 
 function search(city) {
@@ -113,7 +115,7 @@ function search(city) {
   let url = "https://api.openweathermap.org/data/2.5/weather?";
   let apiUrl = `${url}q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}`).then(showTemperature);
-  console.log= apiURL
+ 
 }
 
 function cityChange(event) {
@@ -143,6 +145,8 @@ function showCurrentPosition(position) {
 
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+
 
 //
 
