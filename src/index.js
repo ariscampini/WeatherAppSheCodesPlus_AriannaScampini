@@ -15,8 +15,9 @@ function formatTime(time) {
 }
 
 let currentHour = document.querySelector("#current-hour");
-
 currentHour.innerHTML = formatTime(now);
+
+
 
 // Date
 
@@ -85,7 +86,7 @@ function changeDegreesFahrenheit(event) {
  
   let changeDegreeF = document.querySelector("#degrees");
   let temperature = temperatureNow.innerHTML;
-  let changeF= (temperatureNow * 9) / 5 + 32;
+  let changeF= Math.round(temperatureNow * 9) / 5 + 32;
   changeDegreeF.innerHTML = `${changeF}°F`
 }
 
@@ -146,6 +147,8 @@ function showCurrentPosition(position) {
 
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+
 
 
 
